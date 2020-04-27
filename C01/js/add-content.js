@@ -1,7 +1,8 @@
-var today = new Date();
-var hourNow = today.getHours();
+var today = new Date();                     //Cria um novo objeto Date
+var hourNow = today.getHours();             //Pega a hora atual
 var greeting;
 
+//Exibe a mensagem apropriada de acordo com a hora atual.
 if (hourNow > 18){
     greeting = 'Boa noite!';
 }else if (hourNow > 12){
