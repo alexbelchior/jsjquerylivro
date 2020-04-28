@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array e Objeto com JavaScript</title>
+    </head>
+    <body>
+        <script>
+            var nome = 'Alexandre';
+            var sobrenome = 'Belchior';
+            var idade = 33;
+
+            //Um array de frutas
+            var frutas = ['Banana','Abacaxi','Uva'];
+
+            //adiciona um elemento no array de frutas
+            frutas.push('Melancia');
+            //Para remover um item do array se usa pop();
+            //Para remover o primeiro item do array se usa shift();
+            //Para adicionar um elemento na primeira posição do array se usa unshift('Pitanga');
+            //Para ordenar um array se usa o método sort();
+            //Para inverter a ordem do array se usa o método reverse();
+
+            //exibe o tamanho do array
+            console.log('O array de frutas tem: ' + frutas.length + ' elementos.');
+
+            //Exibe o array de frutas (É o mesmo que frutas.toString())
+            console.log('Array de frutas: ' + frutas);
+
+            //Exibe o array de frutas separado por '-'
+            console.log('Array de frutas separados por "-": ' + frutas.join('-'));
+
+            //Será exibido no console a fruta Uva
+            console.log('Elemento da posição 2 do array de frutas: ' + frutas[2]);
+
+            var pessoa = {
+                nome:'Alexandre',
+                sobrenome: 'Belchior',
+                idade: 33,
+                andar: function(){
+                    alert('caminhando');
+                }
+            };
+
+            console.log(pessoa);
+        </script>
+    </body>
+</html>
