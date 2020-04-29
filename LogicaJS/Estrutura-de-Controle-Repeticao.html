@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estrutura de Controle e Repetição</title>
+    </head>
+
+    <body>
+        <script>
+
+            //---------Uso do SWITCH---------
+            var diaSemana = 6;
+
+            switch(diaSemana){
+                case 6:
+                    console.log('Hoje é sabádo!');
+                    break;
+                
+                case 0:
+                    console.log('Hoje é domingo');
+                    break;
+                
+                default:
+                    console.log('Dia da semana, vamos trabalhar e estudar');
+            }
+            //--------------------------------
+
+            var linguagens = ['PHP', 'Java', 'Cobol', 'Python', 'Lua'];
+
+            for(i = 0; i < linguagens.length; i++){
+                console.log(linguagens[i]);
+            }
+            
+            var contador = 0;
+            var auxiliar = 0;
+            console.log('Tabuada de 2: ');
+            while(contador < 11){
+                auxiliar = contador;
+                console.log('2 x ' + contador + '= ' + auxiliar * 2);
+                contador++;
+            }
+            
+        </script>
+    </body>
+</html>
